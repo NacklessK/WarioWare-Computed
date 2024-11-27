@@ -1,0 +1,1 @@
+audio_play_sound(snd_boss_sonic_hit, 10, false);  

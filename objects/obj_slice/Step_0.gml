@@ -1,0 +1,1 @@
+if !(obj_arrow.wheel_touched)image_angle += 5 * global.game_spd;

@@ -1,0 +1,8 @@
+Controls:
+
+0 - Space Bar
+1 - Arrow Keys
+2 - Space Bar + Arrow Keys
+3 - Mouse
+4 - Keyboard
+5 - Number Pad

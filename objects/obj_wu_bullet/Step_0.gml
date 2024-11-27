@@ -1,0 +1,1 @@
+if (place_meeting(x, y + sprite_height / 2, obj_wu_panel)) instance_destroy();

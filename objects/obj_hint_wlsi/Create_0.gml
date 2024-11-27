@@ -1,0 +1,1 @@
+image_speed = global.game_spd;

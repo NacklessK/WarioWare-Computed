@@ -1,0 +1,1 @@
+font = font_add_sprite_ext(spr_fnt_note, "0123456789", true, 2);

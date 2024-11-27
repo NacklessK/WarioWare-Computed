@@ -1,0 +1,3 @@
+move();
+shake();
+vanish();

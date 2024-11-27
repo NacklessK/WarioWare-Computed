@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_spaceship_music",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":4.205714,
+  "name":"snd_spaceship_music",
+  "parent":{
+    "name":"Microgames",
+    "path":"folders/Sounds/BGM/Microgames.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_spaceship_music.mp3",
+  "type":0,
+  "volume":1.0,
+}

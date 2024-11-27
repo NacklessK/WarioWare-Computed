@@ -1,0 +1,1 @@
+speed = 15 * global.game_spd;

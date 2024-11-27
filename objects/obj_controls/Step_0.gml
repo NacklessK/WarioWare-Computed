@@ -1,0 +1,1 @@
+if (global.stage_state == "playing") instance_destroy();
