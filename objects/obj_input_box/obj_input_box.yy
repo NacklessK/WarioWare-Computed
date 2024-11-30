@@ -1,13 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_twl_man",
+  "%Name":"obj_input_box",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_twl_man",
+  "name":"obj_input_box",
   "overriddenProperties":[],
   "parent":{
     "name":"The Weakest Link",
@@ -32,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_twl_man",
-    "path":"sprites/spr_twl_man/spr_twl_man.yy",
+    "name":"spr_input_box",
+    "path":"sprites/spr_input_box/spr_input_box.yy",
   },
   "spriteMaskId":null,
   "visible":true,

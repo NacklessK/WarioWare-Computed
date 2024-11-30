@@ -34,8 +34,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"PIN'd",
-    "path":"folders/Sprites/Microgames/PIN'd.yy",
+    "name":"Fonts",
+    "path":"folders/Fonts.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
