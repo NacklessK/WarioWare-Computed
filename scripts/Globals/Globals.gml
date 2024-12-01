@@ -3,7 +3,7 @@ global.score = 0;
 global.winning = false;
 global.stage_state = "next";
 global.life = 4;
-global.level = 2;
+global.level = 1;
 global.index = 0;
 global.b_index = 0;
 global.end_time = 0;
@@ -19,7 +19,11 @@ global.sfx = [snd_tick, snd_tick, snd_win_jingle3, snd_win_jingle4, snd_mine, sn
 
 // Microgame Specific
 
+// Figures
+
 global.figure_clicked = false;
+
+// Word Up
 
 global.words = ["HAPPY", "WARIO", "GREAT", "SUPER", "COOL!"];
 global.missing_letters = [[1, 3, 4], [1, 3, 2], [3, 1, 0], [1, 0, 4]];

@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_input_box",
+  "%Name":"obj_confetti",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_input_box",
+  "name":"obj_confetti",
   "overriddenProperties":[],
   "parent":{
-    "name":"The Weakest Link",
-    "path":"folders/Objects/Microgames/The Weakest Link.yy",
+    "name":"Effects",
+    "path":"folders/Objects/Effects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_input_box",
-    "path":"sprites/spr_input_box/spr_input_box.yy",
+    "name":"spr_confetti",
+    "path":"sprites/spr_confetti/spr_confetti.yy",
   },
   "spriteMaskId":null,
   "visible":true,
