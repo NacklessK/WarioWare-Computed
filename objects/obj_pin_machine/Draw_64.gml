@@ -3,7 +3,7 @@ draw_set_color(c_white);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 
-keyboard_string = string_lettersdigits(keyboard_string);
+keyboard_string = string_digits(keyboard_string);
 
 if (string_length(keyboard_string) > 4) keyboard_string = string_copy(keyboard_string, 1, 4);
 

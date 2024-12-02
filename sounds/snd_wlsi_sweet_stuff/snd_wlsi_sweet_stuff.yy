@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_sweet_stuff",
+  "%Name":"snd_wlsi_sweet_stuff",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,7 +10,7 @@
   "compression":0,
   "conversionMode":0,
   "duration":7.57551,
-  "name":"snd_sweet_stuff",
+  "name":"snd_wlsi_sweet_stuff",
   "parent":{
     "name":"Microgames",
     "path":"folders/Sounds/BGM/Microgames.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_sweet_stuff.mp3",
+  "soundFile":"snd_wlsi_sweet_stuff.mp3",
   "type":0,
   "volume":1.0,
 }

@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_mine",
+  "%Name":"snd_booing",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":2.247959,
-  "name":"snd_mine",
+  "duration":0.993515,
+  "name":"snd_booing",
   "parent":{
     "name":"Microgames",
     "path":"folders/Sounds/SFX/Microgames.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_mine.wav",
+  "soundFile":"snd_booing.wav",
   "type":0,
   "volume":1.0,
 }

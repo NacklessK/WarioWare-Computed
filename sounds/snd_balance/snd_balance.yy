@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_sonic_death",
+  "%Name":"snd_balance",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,17 +9,17 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.900658,
-  "name":"snd_sonic_death",
+  "duration":3.578776,
+  "name":"snd_balance",
   "parent":{
     "name":"Microgames",
-    "path":"folders/Sounds/SFX/Microgames.yy",
+    "path":"folders/Sounds/BGM/Microgames.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_sonic_death.wav",
+  "soundFile":"snd_balance.mp3",
   "type":0,
   "volume":1.0,
 }

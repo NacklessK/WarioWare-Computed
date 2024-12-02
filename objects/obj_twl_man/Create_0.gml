@@ -1,7 +1,10 @@
-time_limit = get_timer() + 4_000_000 / global.game_spd;
-percent = 0;
+time_limit = 3_580_000 / global.game_spd;
+c_time = get_timer();
+timer = get_timer() - c_time;
+percent = 100;
 is_correct = false;
-input = 0;
+input = -999;
 screen = obj_twl_screen;
 confetti = 0;
 jingle_played = false;
+instance_create_layer(room_width / 2, room_height / 2, "Spotlight", obj_twl_spotlight);

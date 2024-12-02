@@ -18,7 +18,7 @@ if (shook <= shook_goal){
 		sprite_index = spr_wario_si_shake;
 		shook++;
 		if !(voice_played){
-			audio_play_sound(snd_mine, 10, false);
+			audio_play_sound(snd_wlsi_mine, 10, false);
 			voice_played = true;
 		}
 	}

@@ -40,7 +40,7 @@ if (instance_number(obj_lb_asteroid) > 0) && !(dead){
 }
 
 if (place_meeting(x, y, obj_lb_asteroid)){
-	audio_play_sound(snd_sonic_death, 10, false);
+	audio_play_sound(snd_sth_death, 10, false);
 	dead = true;
 	free = false;
 	layer_set_visible("Black", true);

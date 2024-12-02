@@ -42,7 +42,7 @@ function reset()
 		global.index = 0;	
 		global.microgames = array_shuffle(global.sh_microgames);
 	}
-	pick_mio(4);
+	pick_mio(11);
 	game_room = global.c_mio.lvl1;
 	next_played = false;
 	go_played = false;
