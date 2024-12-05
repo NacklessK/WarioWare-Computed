@@ -1,11 +1,11 @@
-audio_play_sound(snd_pen, 11, false);
+audio_play_sound(snd_pen, 10, false);
 
 x = mouse_x;
 y = mouse_y;
 
 if (alpha >= 0.2){
 	if !(jingle_played){
-		audio_play_sound(snd_win_jingle3, 10, false);
+		audio_play_sound(snd_win_jingle3, 11, false);
 		jingle_played = true;
 	}
 	global.winning = true;

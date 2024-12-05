@@ -22,7 +22,7 @@ if !(audio_is_playing(snd_boss_start)){
 	if !(audio_is_playing(snd_countdown)) countdown_f = true;
 }
 
-if (instance_number(obj_lb_asteroid) > 0) && !(dead){
+if (instance_number(obj_lb_asteroid) == 0) && !(dead){
 	audio_stop_sound(snd_spaceboss);
 	if (free) audio_play_sound(snd_boss_win, 10, false);
 	free = false;

@@ -59,6 +59,36 @@ function bos(_in, _name, _command, _controls, _lvl1, _lvl2=_lvl1, _lvl3=_lvl1){
 	return boss;
 };
 
+// Function to interpret W++ code
+
+function load_code(_filepath){
+	var f = file_text_open_read(_filepath);
+	var lines = []
+	
+	for (var i=0; i < 10; ++i){
+		var line = file_text_readln(f);
+		if (line == global.null_str) break;
+		lines[i] = line;
+	};
+	return lines;
+};
+
+function interpret(_code){
+	for (var i = 0; i < array_length(_code); ++i;){
+		var part = string_split(_code[i], "|");
+		
+		// Find function
+		
+		switch part[0]{
+			
+			case "cont":
+				continous(real(part[1]), real(part[2]));
+		};
+	};
+};
+
+// Function used for microgames
+
 function number_check(_val){
 	return (keyboard_check(96 + _val)) || (keyboard_check(ord(string(_val))));
 }

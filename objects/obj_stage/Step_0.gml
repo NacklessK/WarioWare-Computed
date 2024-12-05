@@ -35,7 +35,7 @@ if (global.stage_state == "result") {
 	else if (global.is_boss){
 		boss_procedure = true;
 		if (global.level < 3) && !(leveled){
-			level_up()
+			level_up();
 			
 		}
 		else if !(sped_up) && (global.level >= 3) speed_up(0.1);
@@ -113,3 +113,5 @@ else if (global.stage_state == "game over") {
 	dark_timer++;
 	};
 };
+
+show_debug_message(boss_procedure);

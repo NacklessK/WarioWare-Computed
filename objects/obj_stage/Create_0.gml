@@ -42,7 +42,7 @@ function reset()
 		global.index = 0;	
 		global.microgames = array_shuffle(global.sh_microgames);
 	}
-	pick_mio(11);
+	pick_mio();
 	game_room = global.c_mio.lvl1;
 	next_played = false;
 	go_played = false;
@@ -96,6 +96,7 @@ function level_up(){
 	audio_play_sound(snd_speed_up, 10, false)
 	next_speed_up += speed_up_interval;
 	global.stage_state = "level up";
+	boss_procedure = false;
 }
 
 
