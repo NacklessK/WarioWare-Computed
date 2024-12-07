@@ -63,7 +63,7 @@ function bos(_in, _name, _command, _controls, _lvl1, _lvl2=_lvl1, _lvl3=_lvl1){
 
 function load_code(_filepath){
 	var f = file_text_open_read(_filepath);
-	var lines = []
+	var lines = [];
 	
 	for (var i=0; i < 10; ++i){
 		var line = file_text_readln(f);
@@ -75,14 +75,81 @@ function load_code(_filepath){
 
 function interpret(_code){
 	for (var i = 0; i < array_length(_code); ++i;){
-		var part = string_split(_code[i], "|");
+		var mains = string_split(_code[i], "§");
+		var c_parts = string_split(mains[0], "|");
+		var actions = string_split(mains[1], "¤");
+		var a_parts = [];
 		
-		// Find function
+		for (var j = 0; j < array_length(actions); ++j;){
+			a_parts[j] = string_split(actions[j], "|");
+		};
 		
-		switch part[0]{
+		var coded_c = [];
+		
+		var condition = false;
+		var bool_val = false;
+		
+		var conditions = string_split(c_parts[2], "&");
+		
+		// Get condition
+		if (get_index_string(c_parts[2], "\\", true) != undefined) coded_c = string_split(c_parts[2], "\\");
+		else coded_c = [c_parts[2]];
+		
+		switch coded_c[0]{
+			case "p_hov":
+				bool_val = position_meeting(mouse_x, mouse_y, self)
+				break;
 			
-			case "cont":
-				continous(real(part[1]), real(part[2]));
+			case "c_key":
+				bool_val = keyboard_check(ord(coded_c[1]));
+				break;
+		};
+		
+		
+		if (self.onces[i]) condition = true;
+		
+		else {
+			switch c_parts[0]{
+				
+				case "if":
+					condition = bool_val;
+					break;
+			
+				case "once":
+					if (bool_val) self.onces[i] = true;
+					condition = self.onces[i];
+					break;
+					
+				};
+			};
+		
+		// Not operator
+		if (c_parts[1] == "!"){
+			condition = !condition;
+		};
+		
+		// Get function
+		
+		for (var j = 0; j < array_length(a_parts); ++j;){
+			var c_action = a_parts[j];
+			if (condition) {
+		    switch c_action[0]{
+			case "adv":
+				advance(c_action[1], c_action[2]);
+				break;
+				
+			case "turn":
+				image_angle += c_action[1];
+				break;
+				
+			case "slide":
+			if (c_action[1] == "") c_action[1] = x;
+			if (c_action[2] == "") c_action[2] = y;
+			slide(c_action[1], c_action[2], c_action[3])
+			break;
+				
+				};
+			};
 		};
 	};
 };
@@ -94,13 +161,13 @@ function number_check(_val){
 }
 
 function get_index_string(_str, _char, _nothrow=false){
-	var index = "None";
+	var index = undefined;
 	for (var i = 0; i < string_length(_str); i++;){
 		if (string_char_at(_str, i+1) == _char){
 			index = i;
 		}
 	}
-	if (index == "None") && !(_nothrow){
+	if (index == undefined) && !(_nothrow){
 		throw($"No character such as \"{_char}\" in \"{_str}\"")
 	}
 	
