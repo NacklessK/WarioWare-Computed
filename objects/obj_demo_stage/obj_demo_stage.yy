@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_pen",
+  "%Name":"obj_demo_stage",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_pen",
+  "name":"obj_demo_stage",
   "overriddenProperties":[],
   "parent":{
-    "name":"Pen-nacle",
-    "path":"folders/Objects/Microgames/Pen-nacle.yy",
+    "name":"General",
+    "path":"folders/Objects/General.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -27,14 +27,13 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v1","%Name":"purpose","filters":[],"listItems":[],"multiselect":false,"name":"purpose","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":" ","varType":2,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_pen",
-    "path":"sprites/spr_pen/spr_pen.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

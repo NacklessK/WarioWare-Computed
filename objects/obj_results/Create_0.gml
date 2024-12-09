@@ -1,2 +1,2 @@
 highscores = global.highscores;
-instance_destroy(obj_stage);
+instance_destroy(obj_demo_stage);

@@ -1,17 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_pen",
+  "%Name":"obj_tricolor",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_pen",
+  "name":"obj_tricolor",
   "overriddenProperties":[],
   "parent":{
-    "name":"Pen-nacle",
-    "path":"folders/Objects/Microgames/Pen-nacle.yy",
+    "name":"Placeholder",
+    "path":"folders/Objects/General/Placeholder.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_pen",
-    "path":"sprites/spr_pen/spr_pen.yy",
+    "name":"spr_tricolor",
+    "path":"sprites/spr_tricolor/spr_tricolor.yy",
   },
   "spriteMaskId":null,
   "visible":true,

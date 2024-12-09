@@ -28,7 +28,7 @@ function load_game(){
 	
 };
 
-// These two functions are used to easily assign microgames to structs.
+// Microgame fucntions
 
 function mio(_in, _name, _command, _controls, _time_limit, _lvl1, _lvl2=_lvl1, _lvl3=_lvl1){
 	microgame = {
@@ -57,6 +57,91 @@ function bos(_in, _name, _command, _controls, _lvl1, _lvl2=_lvl1, _lvl3=_lvl1){
 	};
 	
 	return boss;
+};
+	
+function pick_mio(_index=undefined){
+	
+	if is_undefined(_index){
+		global.c_mio = global.sh_microgames[global.index];
+	}
+	
+	else {
+		global.c_mio = global.microgames[_index];
+	};
+	
+};
+
+function add_score(){
+	if !(self.score_added) {
+		global.score += 1;
+		self.score_added = true;
+	}
+}
+	
+function lose_life(){
+	if !(self.life_lost) {
+		global.life -= 1;
+		self.life_lost = true;
+	}
+}
+	
+function speed_up(_increment, _silent=false){
+	global.game_spd += _increment;
+	if !(_silent){
+		global.stage_state = "speed up";
+		audio_play_sound(snd_speed_up, 10, false)
+	};
+	sped_up = true;
+	next_speed_up += speed_up_interval;
+}
+
+function update_audio_speed()
+{
+	var _audio_list = [global.bgm, global.sfx]
+	for (var i = 0; i < array_length(_audio_list); i++){
+		for (var j = 0; j < array_length(_audio_list[i]); j++){
+			audio_sound_pitch(_audio_list[i][j], global.game_spd);
+	}
+	}
+}
+
+function level_up(){
+	leveled = true;
+	global.level++;
+	audio_play_sound(snd_speed_up, 10, false)
+	next_speed_up += speed_up_interval;
+	global.stage_state = "level up";
+	boss_procedure = false;
+}
+
+function boss_stage(){
+	next_boss += boss_interval;
+	var current_spd = global.game_spd;
+	global.game_spd = base_spd;
+	base_spd = current_spd;
+	update_audio_speed();
+	
+	if (global.b_index + 1 < array_length(global.sh_bosses)) global.b_index += 1;
+	else {
+		global.b_index = 0;	
+		global.bosses = array_shuffle(global.sh_bosses);
+	}
+	
+	global.c_bos = global.bosses[global.b_index];
+	game_room = global.c_bos.lvl1;
+	audio_play_sound(snd_speed_up, 10, false);
+	global.is_boss = true;
+}
+
+function save_highscores(){
+	for (var i=0; i < array_length(global.highscores); i++;){
+		if (global.score >= global.highscores[i]){
+			array_insert(global.highscores, i, global.score);
+			break;
+		};
+	};
+	if (array_length(global.highscores) > 3) array_pop(global.highscores);
+	save_game();
 };
 
 // Function to interpret W++ code
@@ -88,21 +173,30 @@ function interpret(_code){
 		
 		var condition = false;
 		var bool_val = false;
+		var bools = [];
 		
 		var conditions = string_split(c_parts[2], "&");
 		
 		// Get condition
-		if (get_index_string(c_parts[2], "\\", true) != undefined) coded_c = string_split(c_parts[2], "\\");
-		else coded_c = [c_parts[2]];
-		
-		switch coded_c[0]{
+		for (var j = 0; j < array_length(conditions); ++j;){
+			if (get_index_string(conditions[j], "\\", true) != undefined) coded_c = string_split(c_parts[2], "\\");
+			else coded_c = [conditions[j]];
+			
+			switch coded_c[0]{
 			case "p_hov":
-				bool_val = position_meeting(mouse_x, mouse_y, self)
+				bools[j] = position_meeting(mouse_x, mouse_y, self)
 				break;
 			
 			case "c_key":
-				bool_val = keyboard_check(ord(coded_c[1]));
+				bools[j] = keyboard_check(ord(coded_c[1]));
 				break;
+			
+			case "s_click":
+				bools[j] = position_meeting(mouse_x, mouse_y, self) && (mouse_check_button_pressed(mb_left));
+		};
+		
+		bool_val = array_sum(bools) == array_length(bools);
+		
 		};
 		
 		
@@ -132,29 +226,40 @@ function interpret(_code){
 		
 		for (var j = 0; j < array_length(a_parts); ++j;){
 			var c_action = a_parts[j];
-			if (condition) {
 		    switch c_action[0]{
-			case "adv":
-				advance(c_action[1], c_action[2]);
-				break;
 				
-			case "turn":
-				image_angle += c_action[1];
-				break;
+				case "mov":
+					if (condition) advance(c_action[1], c_action[2]);
+					break;
 				
-			case "slide":
-			if (c_action[1] == "") c_action[1] = x;
-			if (c_action[2] == "") c_action[2] = y;
-			slide(c_action[1], c_action[2], c_action[3])
-			break;
+				case "turn":
+					if (condition) image_angle += c_action[1];
+					break;
 				
-				};
+				case "slide":
+					if (c_action[1] == "") c_action[1] = x;
+					if (c_action[2] == "") c_action[2] = y;
+					if (condition) || (self.sliding) slide(c_action[1], c_action[2], c_action[3]);
+					break;
+			
+				case "audio":
+					if (condition) play_imported_audio(c_action[1], j);
+					break
+				
 			};
 		};
 	};
 };
 
 // Function used for microgames
+
+function array_sum(_array){
+	var sum = 0;
+	for (var i = 0; i < array_length(_array); ++i;){
+		sum += _array[i];
+	};
+	return sum;
+};
 
 function number_check(_val){
 	return (keyboard_check(96 + _val)) || (keyboard_check(ord(string(_val))));

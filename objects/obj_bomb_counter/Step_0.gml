@@ -1,4 +1,4 @@
-if (scale < 2) scale += (2 - scale) * 0.5;
+if (scale < 5) scale += (5 - scale) * 0.5;
 
 if (old_frame != floor(image_index)){
 	scale = spawn_scale;

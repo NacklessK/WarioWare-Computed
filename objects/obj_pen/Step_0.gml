@@ -3,7 +3,7 @@ audio_play_sound(snd_pen, 10, false);
 x = mouse_x;
 y = mouse_y;
 
-if (alpha >= 0.2){
+if (alpha >= 0.5){
 	if !(jingle_played){
 		audio_play_sound(snd_win_jingle3, 11, false);
 		jingle_played = true;
@@ -18,7 +18,7 @@ if (array_length(x_lst) >= 2){
 	var d_x = abs(array_last(x_lst) - x_lst[array_length(x_lst) - 2]);
 	var d_y = abs(array_last(y_lst) - y_lst[array_length(y_lst) - 2]);
 	distance =  sqrt(power(d_x, 2) + power(d_y, 2))
-	alpha += distance / 50000;
+	alpha += distance / 30000;
 	show_debug_message(alpha);
 }
 

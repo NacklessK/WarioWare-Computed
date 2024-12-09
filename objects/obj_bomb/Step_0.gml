@@ -5,7 +5,7 @@ if (obj_microgame.c_time + default_time > global.end_time){
 	if (image_index < 1) && (animation_began) sprite_index = spr_boom;
 	if (image_index > 5){
 		if !(counter_created){
-			instance_create_layer(x + 13, y - 135, "Counter", obj_bomb_counter, {image_speed: image_speed});
+			instance_create_layer(x + 10, y - 100, "Counter", obj_bomb_counter, {image_speed: image_speed});
 			counter_created = true;
 		}
 		if (floor(old_frame) != floor(image_index)){
@@ -22,4 +22,3 @@ else {
 	image_speed = 0;
 	image_alpha = 0;
 };
-	
