@@ -6,13 +6,15 @@ switch purpose{
 		speed_up_interval = 3;
 		base_spd = 0;
 		is_silent = false;
+		is_random = true;
 		break;
 	
 	case "index":
 		boss_interval = -1;
-		speed_up_interval = 3;
+		speed_up_interval = -1;
 		base_spd = 0;
 		is_silent = true;
+		is_random = false;
 		break;
 };
 
@@ -35,12 +37,12 @@ load_game();
 
 global.index = 0;
 global.b_index = 0;
-global.c_bos = noone;
+global.c_mio = global.microgames[global.index];
+global.c_bos = global.bosses[global.b_index];
 randomize();
 global.sh_microgames = array_shuffle(global.microgames);
 global.sh_bosses = array_shuffle(global.bosses);
 global.c_bos = global.bosses[global.b_index];
-reset();
 
 function reset()
 {
@@ -49,7 +51,8 @@ function reset()
 		global.index = 0;	
 		global.microgames = array_shuffle(global.sh_microgames);
 	}
-	pick_mio();
+	if (is_random) pick_mio();
+	if (is_random) pick_mio(global.s_mio);
 	game_room = global.c_mio.lvl1;
 	next_played = false;
 	go_played = false;
@@ -65,3 +68,7 @@ function reset()
 
 if (global.stage_state == "playing") global.stage_state = "result";
 };
+
+
+
+reset();

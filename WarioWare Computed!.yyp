@@ -341,8 +341,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rm_index_player","path":"rooms/rm_index_player/rm_index_player.yy",},},
     {"roomId":{"name":"rm_demo_stage","path":"rooms/rm_demo_stage/rm_demo_stage.yy",},},
+    {"roomId":{"name":"rm_index_player","path":"rooms/rm_index_player/rm_index_player.yy",},},
     {"roomId":{"name":"rm_sprite_test","path":"rooms/rm_sprite_test/rm_sprite_test.yy",},},
     {"roomId":{"name":"rm_game_over","path":"rooms/rm_game_over/rm_game_over.yy",},},
     {"roomId":{"name":"rm_wario_whirled","path":"rooms/rm_wario_whirled/rm_wario_whirled.yy",},},

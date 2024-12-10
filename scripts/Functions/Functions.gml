@@ -68,7 +68,7 @@ function pick_mio(_index=undefined){
 	else {
 		global.c_mio = global.microgames[_index];
 	};
-	
+	show_debug_message(global.c_mio)
 };
 
 function add_score(){
@@ -105,12 +105,18 @@ function update_audio_speed()
 	}
 }
 
-function level_up(){
+function level_up(_silent=false){
 	leveled = true;
-	global.level++;
-	audio_play_sound(snd_speed_up, 10, false)
-	next_speed_up += speed_up_interval;
-	global.stage_state = "level up";
+	if (global.level < 3) global.level++;
+	else{
+		global.level = 1;
+		speed_up(0.1, is_silent);
+	};
+	if !(_silent){
+		audio_play_sound(snd_speed_up, 10, false);
+		global.stage_state = "level up";
+		next_speed_up += speed_up_interval;
+	};
 	boss_procedure = false;
 }
 

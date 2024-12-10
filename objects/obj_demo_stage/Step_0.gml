@@ -10,10 +10,8 @@ if (global.stage_state == "result") {
 	  audio_play_sound(jingle, 10, false);
 	  result_played = true;
 	  if !(global.winning) lose_life();
-	  else if (global.one_up) && (global.life < 4){
-		  global.life++;
-		 
-	  }
+	  else if (global.one_up) && (global.life < 4) global.life++;
+	  if (purpose == "index") level_up(is_silent); 
 	  global.one_up = false; 
   }
   
