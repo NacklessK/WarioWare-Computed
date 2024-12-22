@@ -7,6 +7,9 @@ if (scale > og_scale){
 };
 
 if (global.game_start){
-	y += (-sprite_height  - y) * 0.3;
-	if (y < -sprite_height) instance_destroy();
+	y -= 15;
+	if (y < -sprite_height * 2){
+		instance_destroy();
+		room_goto(rm_main_menu);
+	};
 };

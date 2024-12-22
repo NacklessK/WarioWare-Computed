@@ -29,7 +29,7 @@ if (start){
 		
 		else{
 			global.game_start = true;
-			y += ((-sprite_height)  - y) * 0.1;
+			y -= 30;
 			global.game_start = true;
 			if (y < -sprite_height * 1.5) instance_destroy();
 		};

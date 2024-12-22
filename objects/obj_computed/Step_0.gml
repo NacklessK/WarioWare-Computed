@@ -18,6 +18,6 @@ if (effect){
 };
 
 if (global.game_start){
-	y += (-sprite_height  - y) * 0.2;
+	y -= 20;
 	if (y < -sprite_height) instance_destroy();
 };
