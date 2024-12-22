@@ -13,6 +13,7 @@ global.losing = false;
 global.one_up = false;
 global.is_boss = false;
 global.highscores = [0, 0, 0];
+global.game_start = false;
 
 // Audio
 global.bgm = [snd_next, snd_win, snd_loss, snd_wario_whirled, snd_speed_up, snd_pop_ups, snd_wlsi_sweet_stuff, snd_land_sand, snd_spaceship_music, snd_floats_island, snd_wobble_box, snd_crazy_cars, snd_anyone_home, snd_balance];
