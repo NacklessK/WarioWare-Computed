@@ -186,6 +186,7 @@
     {"id":{"name":"rm_demo_stage","path":"rooms/rm_demo_stage/rm_demo_stage.yy",},},
     {"id":{"name":"rm_figures","path":"rooms/rm_figures/rm_figures.yy",},},
     {"id":{"name":"rm_game_over","path":"rooms/rm_game_over/rm_game_over.yy",},},
+    {"id":{"name":"rm_index_menu","path":"rooms/rm_index_menu/rm_index_menu.yy",},},
     {"id":{"name":"rm_index_player","path":"rooms/rm_index_player/rm_index_player.yy",},},
     {"id":{"name":"rm_kssu","path":"rooms/rm_kssu/rm_kssu.yy",},},
     {"id":{"name":"rm_launch_break1","path":"rooms/rm_launch_break1/rm_launch_break1.yy",},},
@@ -391,6 +392,7 @@
     {"roomId":{"name":"rm_weakest_link","path":"rooms/rm_weakest_link/rm_weakest_link.yy",},},
     {"roomId":{"name":"rm_pen","path":"rooms/rm_pen/rm_pen.yy",},},
     {"roomId":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
+    {"roomId":{"name":"rm_index_menu","path":"rooms/rm_index_menu/rm_index_menu.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

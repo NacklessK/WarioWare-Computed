@@ -1,4 +1,3 @@
-
 switch purpose{
 	
 	case "demo":
@@ -52,7 +51,7 @@ function reset()
 		global.microgames = array_shuffle(global.sh_microgames);
 	}
 	if (is_random) pick_mio();
-	if (is_random) pick_mio(global.s_mio);
+	else pick_mio(global.s_mio);
 	game_room = global.c_mio.lvl1;
 	next_played = false;
 	go_played = false;

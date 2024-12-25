@@ -68,7 +68,6 @@ function pick_mio(_index=undefined){
 	else {
 		global.c_mio = global.microgames[_index];
 	};
-	show_debug_message(global.c_mio)
 };
 
 function add_score(){
@@ -286,7 +285,7 @@ function get_index_string(_str, _char, _nothrow=false){
 }
 
 function fade_out(_room, _sec=1){
-	instance_create_depth(0, 0, 0, obj_fade_out, {sec: _sec});
+	instance_create_depth(0, 0, 0, obj_fade_out, {sec: _sec, _room: _room});
 };
 
 function rand_sign(){

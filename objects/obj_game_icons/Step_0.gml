@@ -1,4 +1,5 @@
-if (instance_number(obj_menu_windows) > 0) {
+if !(effect) {
+    if (instance_number(obj_menu_windows) > 0) {
 	if (obj_menu_windows.closed){
 		y = -sprite_height * 10;
 		image_xscale = og_scale;
@@ -16,6 +17,29 @@ if (instance_number(obj_menu_windows) > 0) {
 if (instance_position(mouse_x, mouse_y, self)) && (image_xscale > 2.66){
 	obj_window_select_box.x = x;
 	obj_window_select_box.y = y;
+	if (mouse_check_button_pressed(mb_left)) && !(clicked){
+		instance_create_layer(x, y, "WinIconFX", obj_game_icons, {image_xscale: image_xscale, image_yscale: image_yscale, image_index: entry, effect: true});
+		clicked = true;
+	};
 }
 
 else if !(position_meeting(mouse_x, mouse_y, obj_game_icons)) obj_window_select_box.y = -5000;
+}
+
+else {
+	image_xscale += 0.8;
+	image_yscale = image_xscale;
+	image_alpha -= 0.1;
+	if (image_alpha <= 0){
+		switch image_index{
+			case 0:
+				fade_out(rm_demo_stage, .5);
+				break;
+			case 1: 
+				fade_out(rm_index_menu, .5);
+				break;
+		};
+		
+		//instance_destroy();
+	};
+};

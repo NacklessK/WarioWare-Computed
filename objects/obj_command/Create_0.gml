@@ -1,3 +1,14 @@
+offset_timer = 0;
+offset_timer_limit = 30 / global.game_spd;
+persistent = true;
+command_size = 30;
+command_x = room_width / 2;
+command_y = room_height / 2;
+command_timer = 0;
+command = "";
+drawing = false;
+did_reset = false;
+
 function reset(){
 	command_size = 30;
 	command_x = room_width / 2;
@@ -29,14 +40,4 @@ function draw(){
 		drawing = false;
 		did_reset = false;
 	}
-}
-
-persistent = true;
-command_size = 30;
-command_x = room_width / 2;
-command_y = room_height / 2;
-command_timer = 0;
-commands = ["Stop!", "Close!", "Shake!", "Deduce!", "Shoot!", "Spin!", "Mash!", "Straighten up!", "Code?", "Beam!"];
-b_commands = ["Launch!"]
-drawing = false;
-did_reset = false;
+};
