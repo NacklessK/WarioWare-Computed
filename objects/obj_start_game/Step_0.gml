@@ -1,4 +1,6 @@
-if (keyboard_check_pressed(vk_space)) && (image_alpha == d_alpha) start = true;
+var pressed = (keyboard_check_pressed(vk_space)) || ((position_meeting(mouse_x, mouse_y, self)) &&  (mouse_check_button_pressed(mb_left)));
+
+if pressed && (image_alpha == d_alpha) start = true;
 
 if !(bg){
 	if (instance_number(obj_computed) == 1) && ((abs(obj_computed.x - obj_computed.target_x) < 3)){
@@ -28,6 +30,9 @@ if (start){
 		}
 		
 		else{
+			if !(faded) instance_create_layer(0, 0, "Fade", obj_fade_in, {sprite_index: bg_crescent,
+																		image_xscale: 1366 / 285,
+																		image_yscale: 768 / 160});
 			global.game_start = true;
 			y -= 30;
 			global.game_start = true;
