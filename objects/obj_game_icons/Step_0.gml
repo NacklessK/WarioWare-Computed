@@ -18,7 +18,7 @@ if (instance_position(mouse_x, mouse_y, self)) && (image_xscale > 2.66){
 	obj_window_select_box.x = x;
 	obj_window_select_box.y = y;
 	if (mouse_check_button_pressed(mb_left)) && !(clicked){
-		instance_create_layer(x, y, "WinIconFX", obj_game_icons, {image_xscale: image_xscale, image_yscale: image_yscale, image_index: entry, effect: true});
+		instance_create_layer(x, y, "WinIconFX", obj_game_icons, {image_xscale: image_xscale, image_yscale: image_yscale, image_index: entry + 2, effect: true});
 		clicked = true;
 	};
 }
@@ -31,15 +31,13 @@ else {
 	image_yscale = image_xscale;
 	image_alpha -= 0.1;
 	if (image_alpha <= 0){
-		switch image_index{
+		switch image_index - 2{
 			case 0:
 				fade_out(rm_demo_stage, .5);
 				break;
 			case 1: 
-				fade_out(rm_index_menu, .5);
+				instance_create_layer(room_width / 2, room_height / 2, "Indexplorer", obj_indexplorer);
 				break;
 		};
-		
-		//instance_destroy();
 	};
 };
