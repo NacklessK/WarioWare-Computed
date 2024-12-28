@@ -49,7 +49,12 @@ for (var i = 0; i <= 2; i++;){
 			}
 			anti_loop = 0;
 		}
-		else while (array_equals(form, shape_list[0])) && (anti_loop < 10) random_shape(); anti_loop++;
+		else{
+			while (array_equals(form, shape_list[0])) && (anti_loop < 10){
+			random_shape();
+			anti_loop++;
+			};
+		};
 		 
 		 array_push(shape_list, [color, size, shape])
 			
