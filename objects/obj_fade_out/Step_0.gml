@@ -2,7 +2,7 @@ if !(reverse) progress ++;
 else progress--;
 
 if (progress == sec * game_get_speed(gamespeed_fps)){
-   room_goto(_room);
+   if (room != _room) room_goto(_room);
    reverse = true;
 };
 

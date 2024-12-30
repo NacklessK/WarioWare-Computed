@@ -6,6 +6,6 @@ c_time = get_timer();
 finished = false;
 
 function end_game(){
-	room_goto(rm_demo_stage); 
+	room_goto(global.stage_room); 
 	audio_stop_sound(music)
 };

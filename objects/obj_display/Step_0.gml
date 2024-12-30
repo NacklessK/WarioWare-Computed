@@ -18,9 +18,15 @@ else if !(one_up){
 			};
 		}
 		if (been_static){
-			sprite_index = spr_display_controls;
-			if !(global.is_boss) image_index = global.c_mio.controls;
-			else image_index = global.c_bos.controls;
+			if (obj_stage.purpose == "demo") {
+			    sprite_index = spr_display_controls;
+				if !(global.is_boss) image_index = global.c_mio.controls;
+				else image_index = global.c_bos.controls;
+			}
+			else {
+			    sprite_index = spr_display_lives
+				image_index = abs(4 - global.life);
+			}
 		};
 	}
 

@@ -6,6 +6,7 @@ switch purpose{
 		base_spd = 0;
 		is_silent = false;
 		is_random = true;
+		global.stage_room  = rm_demo_stage;
 		break;
 	
 	case "index":
@@ -14,9 +15,11 @@ switch purpose{
 		base_spd = 0;
 		is_silent = true;
 		is_random = false;
+		global.stage_room  = rm_index_player;
 		break;
 };
 
+global.c_stage = purpose;
 base_spd = global.game_spd;
 
 next_speed_up = 0;
@@ -67,7 +70,5 @@ function reset()
 
 if (global.stage_state == "playing") global.stage_state = "result";
 };
-
-
 
 reset();

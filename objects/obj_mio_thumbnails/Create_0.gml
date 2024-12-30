@@ -1,0 +1,1 @@
+game = global.microgames[0];

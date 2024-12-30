@@ -3,8 +3,9 @@
 function save_game(){
 	
 	var save_data = {
-		demo_highscores: global.highscores
-	}
+		demo_highscores: global.highscores,
+		index_highscores: global.index_highscores
+	};
 	
 	var save_string = json_stringify(save_data);
 	var save_file = file_text_open_write("save_data.sav");
@@ -21,6 +22,7 @@ function load_game(){
 		var save_data = json_parse(file_text_read_string(save_file));
 		
 		global.highscores = save_data.demo_highscores;
+		global.index_highscores = save_data.index_highscores;
 		
 		file_text_close(save_file);
 		
@@ -139,13 +141,26 @@ function boss_stage(){
 }
 
 function save_highscores(){
-	for (var i=0; i < array_length(global.highscores); i++;){
-		if (global.score >= global.highscores[i]){
-			array_insert(global.highscores, i, global.score);
-			break;
+	if (purpose == "demo"){
+		for (var i=0; i < array_length(global.highscores); i++;){
+			if (global.score >= global.highscores[i]){
+				array_insert(global.highscores, i, global.score);
+				break;
+			};
 		};
+		if (array_length(global.highscores) > 3) array_pop(global.highscores);
+	}
+	
+	else {
+		for (var i=0; i < array_length(global.index_highscores[global.s_mio]); i++;){
+			if (global.score >= global.index_highscores[global.s_mio][i]){
+				array_insert(global.index_highscores[global.s_mio], i, global.score);
+				break;
+			};
+		};
+		if (array_length(global.index_highscores[global.s_mio]) > 3) array_pop(global.index_highscores[global.s_mio]);
 	};
-	if (array_length(global.highscores) > 3) array_pop(global.highscores);
+	
 	save_game();
 };
 

@@ -64,12 +64,11 @@ if (global.stage_state == "result") {
 // Next microgame
 
 else if (global.stage_state == "next") && !(audio_is_playing(snd_speed_up)){
-	if (has_looped) add_score();
+	add_score();
     if !(next_played)
 	{
 		update_audio_speed();
 		audio_play_sound(snd_next, 10, false);
-		instance_create_layer(room_width / 2, room_height / 2, "Controls", obj_controls);
 		next_played = true;
 	}
 

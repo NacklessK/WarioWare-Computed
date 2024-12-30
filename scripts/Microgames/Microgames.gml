@@ -24,3 +24,9 @@ global.microgames = [mio_wario_whirled, mio_pop_up, mio_wlsi, mio_figures,
 
 // All bosses in one array					
 global.bosses = [bos_launch_break];
+
+global.index_highscores = [];
+
+repeat (array_length(global.microgames) + array_length(global.bosses)){
+	array_push(global.index_highscores, [0, 0, 0]);
+};
