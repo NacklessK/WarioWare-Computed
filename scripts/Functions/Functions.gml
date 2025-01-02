@@ -68,7 +68,12 @@ function pick_mio(_index=undefined){
 	}
 	
 	else {
-		global.c_mio = global.microgames[_index];
+		if (purpose == "demo") || (global.s_type == "mio"){
+			global.c_mio = global.microgames[_index];
+		}
+		else {
+			global.c_mio = global.bosses[_index];
+		};
 	};
 };
 

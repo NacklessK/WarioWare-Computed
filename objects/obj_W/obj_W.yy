@@ -1,13 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_menu_windows",
+  "%Name":"obj_W",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_menu_windows",
+  "name":"obj_W",
   "overriddenProperties":[],
   "parent":{
     "name":"Main Menu",
@@ -34,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_menu_windows",
-    "path":"sprites/spr_menu_windows/spr_menu_windows.yy",
+    "name":"spr_W",
+    "path":"sprites/spr_W/spr_W.yy",
   },
   "spriteMaskId":null,
   "visible":true,

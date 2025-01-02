@@ -23,6 +23,8 @@ else {
 	image_alpha -= 0.1;
 	
 	global.s_mio = entry;
+	if (boss) global.s_type = "boss";
+	else global.s_type = "mio";
 	global.stage_room = rm_index_player;
 	fade_out(rm_index_player, .5);
 	

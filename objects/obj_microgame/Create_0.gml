@@ -7,5 +7,6 @@ finished = false;
 
 function end_game(){
 	room_goto(global.stage_room); 
-	audio_stop_sound(music)
+	audio_stop_sound(music);
+	
 };

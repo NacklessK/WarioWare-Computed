@@ -33,8 +33,8 @@ if (instance_number(obj_lb_asteroid) == 0) && !(dead){
 		if (y < -sprite_height){
 			instance_destroy();
 			global.winning = true;
-			global.one_up = true;
-			room_goto(rm_demo_stage);
+			if (global.c_stage == "demo") global.one_up = true;
+			room_goto(global.stage_room);
 		}
 	}
 }
@@ -52,6 +52,6 @@ if (dead){
 	else if (image_alpha > 0) image_alpha -= global.game_spd * 0.1;
 	else if (image_alpha <= 0){
 	if (timer < 30) timer += global.game_spd;
-	else room_goto(rm_demo_stage);
+	else room_goto(global.stage_room);
 	}
 }

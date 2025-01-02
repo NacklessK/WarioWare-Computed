@@ -7,6 +7,7 @@ global.level = 1;
 global.index = 0;
 global.b_index = 0;
 global.s_mio = 0;
+global.s_type = "mio";
 global.end_time = 0;
 global.game_spd = 1;
 global.losing = false;
@@ -16,6 +17,8 @@ global.highscores = [0, 0, 0];
 global.game_start = false;
 global.stage_room = undefined;
 global.c_stage = "";
+global.presentation = "";
+
 // Audio
 global.bgm = [snd_next, snd_win, snd_loss, snd_wario_whirled, snd_speed_up, snd_pop_ups, snd_wlsi_sweet_stuff, snd_land_sand, snd_spaceship_music, snd_floats_island, snd_wobble_box, snd_crazy_cars, snd_anyone_home, snd_balance];
 global.sfx = [snd_tick, snd_tick, snd_win_jingle3, snd_win_jingle4, snd_wlsi_mine, snd_correct, snd_wrong, snd_boss_sonic_hit, snd_kssu_hit, snd_hit, snd_booing];

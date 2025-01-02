@@ -41,3 +41,5 @@ function draw(){
 		did_reset = false;
 	}
 };
+
+show_debug_message(command)

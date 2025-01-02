@@ -1,13 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_menu_windows",
+  "%Name":"obj_window_icons",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_menu_windows",
+  "name":"obj_window_icons",
   "overriddenProperties":[],
   "parent":{
     "name":"Main Menu",
@@ -29,13 +28,15 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"entry","filters":[],"listItems":[],"multiselect":false,"name":"entry","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"menu","filters":[],"listItems":[],"multiselect":false,"name":"menu","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"effect","filters":[],"listItems":[],"multiselect":false,"name":"effect","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_menu_windows",
-    "path":"sprites/spr_menu_windows/spr_menu_windows.yy",
+    "name":"spr_game_icons",
+    "path":"sprites/spr_game_icons/spr_game_icons.yy",
   },
   "spriteMaskId":null,
   "visible":true,
