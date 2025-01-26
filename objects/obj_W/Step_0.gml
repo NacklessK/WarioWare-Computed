@@ -10,7 +10,15 @@ else y = -sprite_height * 2;
 if (mouse_check_button_pressed(mb_left)) && (position_meeting(mouse_x, mouse_y, self)) && !(turning){
 	turning = true
 	switch entry{
-	case 0: window_set_fullscreen(!rightside);
+	case 0:
+		window_set_fullscreen(!rightside);
+		global.fullscreen = window_get_fullscreen();
+		break;
+		
+	case 1:
+		global.vsync = !rightside;
+		display_reset(0, global.vsync);
+		break;
 };
 };
 

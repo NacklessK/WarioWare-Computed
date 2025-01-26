@@ -75,6 +75,9 @@ else if (global.stage_state == "next") && !(audio_is_playing(snd_speed_up)){
 	if !(audio_is_playing(snd_next))
 	{
 		room_goto(game_room);
+		var in = global.c_mio.in;
+		if ((global.score + boss_interval == next_boss) && (global.score > 1)) in = global.c_bos.in + array_length(global.microgames);
+		global.unlocked_mio[in] = true;
 		next_played = false;
 		global.stage_state = "playing"
 		global.winning = false;

@@ -2,6 +2,7 @@ if !(effect) {
     if (instance_number(obj_menu_windows) > 0) {
 	if (obj_menu_windows.closed){
 		y = -1000;
+		save_game();
 		image_xscale = og_scale;
 		image_yscale = image_xscale;
 		sprite_index = default_sprite;
@@ -21,7 +22,7 @@ if (instance_position(mouse_x, mouse_y, self)) && (image_xscale > 2.66){
 	obj_window_select_box.x = x;
 	obj_window_select_box.y = y;
 	if (mouse_check_button_pressed(mb_left)) && !(clicked){
-		instance_create_layer(x, y, "WinIconFX", obj_window_icons, {image_xscale: image_xscale, image_yscale: image_yscale, image_index: entry + image_number, entry: entry, effect: true, menu: menu});
+		instance_create_layer(x, y, "WinIconFX", obj_window_icons, {image_xscale: image_xscale, image_yscale: image_yscale, entry: entry, effect: true, menu: menu});
 		clicked = true;
 	};
 }
@@ -42,11 +43,19 @@ else {
 					instance_destroy();
 					global.presentation = "graphics";
 				};
+				
 				break;
 			case 1: 
-				if (menu == 0) instance_create_layer(room_width / 2, room_height / 2, "Indexplorer", obj_indexplorer);
+				if (menu == 0){
+					instance_create_layer(room_width / 2, room_height / 2, "Indexplorer", obj_indexplorer);
+					instance_destroy();
+				};
+				if (menu == 1){
+					obj_window_icons.sprite_index = spr_empty;
+					instance_destroy();
+					global.presentation = "data";
+				};
 				break;
 		};
 	};
 };
-

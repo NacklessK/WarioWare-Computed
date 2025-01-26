@@ -4,7 +4,10 @@ function save_game(){
 	
 	var save_data = {
 		demo_highscores: global.highscores,
-		index_highscores: global.index_highscores
+		index_highscores: global.index_highscores,
+		fullscreen: global.fullscreen,
+		vsync: global.vsync,
+		unlocked_mio: global.unlocked_mio
 	};
 	
 	var save_string = json_stringify(save_data);
@@ -23,8 +26,15 @@ function load_game(){
 		
 		global.highscores = save_data.demo_highscores;
 		global.index_highscores = save_data.index_highscores;
+		global.fullscreen = save_data.fullscreen;
+		global.vsync = save_data.vsync;
+		global.unlocked_mio = save_data.unlocked_mio;
 		
 		file_text_close(save_file);
+		
+			
+		window_set_fullscreen(global.fullscreen);
+		display_reset(0, global.vsync);
 		
 	};
 	

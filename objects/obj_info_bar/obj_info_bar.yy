@@ -1,15 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_index_controls",
+  "%Name":"obj_info_bar",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_index_controls",
+  "name":"obj_info_bar",
   "overriddenProperties":[],
   "parent":{
-    "name":"Indexplorer",
-    "path":"folders/Objects/Presentation/Indexplorer.yy",
+    "name":"Presentation",
+    "path":"folders/Objects/Presentation.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_index_controls",
-    "path":"sprites/spr_index_controls/spr_index_controls.yy",
+    "name":"spr_info_bar",
+    "path":"sprites/spr_info_bar/spr_info_bar.yy",
   },
   "spriteMaskId":null,
   "visible":true,

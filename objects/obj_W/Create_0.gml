@@ -5,7 +5,13 @@ turning = false;
 rightside = true;
 
 switch entry{
-	case 0: rightside = window_get_fullscreen();
+	case 0: 
+		rightside = global.fullscreen;
+		break;
+	case 1: 
+		rightside = global.vsync;
+		break;
 };
 
-image_angle = 180 * -rightside + 180;
+if (rightside) image_angle = 0;
+else image_angle = 180;

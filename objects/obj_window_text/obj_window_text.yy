@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_index_controls",
+  "%Name":"obj_window_text",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_index_controls",
+  "name":"obj_window_text",
   "overriddenProperties":[],
   "parent":{
-    "name":"Indexplorer",
-    "path":"folders/Objects/Presentation/Indexplorer.yy",
+    "name":"Main Menu",
+    "path":"folders/Objects/Presentation/Main Menu.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_index_controls",
-    "path":"sprites/spr_index_controls/spr_index_controls.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

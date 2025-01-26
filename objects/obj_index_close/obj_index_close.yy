@@ -1,11 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_index_controls",
+  "%Name":"obj_index_close",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_index_controls",
+  "name":"obj_index_close",
   "overriddenProperties":[],
   "parent":{
     "name":"Indexplorer",
@@ -29,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_index_controls",
-    "path":"sprites/spr_index_controls/spr_index_controls.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

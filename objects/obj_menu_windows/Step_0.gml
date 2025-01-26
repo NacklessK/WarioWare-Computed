@@ -16,3 +16,19 @@ if (scale < 0.25){
 	if (wait < 1) wait++;
 	else instance_destroy();
 };
+
+if (scale > 2) && (scale < 3){
+	switch entry{
+		case 0:
+			global.presentation = "game";
+			break;
+	
+		case 1:
+			global.presentation = "options";
+			break;
+	
+		case 2:
+			global.presentation = "extras";
+			break;
+	};
+};

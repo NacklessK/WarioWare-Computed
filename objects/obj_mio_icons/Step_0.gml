@@ -9,7 +9,7 @@ if !(effect){
 		obj_index_select_box.sel_mio = entry;
 		obj_index_select_box.boss = boss;
 	
-		if (mouse_check_button_pressed(mb_left)) && !(clicked){
+		if (mouse_check_button_pressed(mb_left)) && !(clicked) && (unlocked){
 			instance_create_layer(x, y, "IconsFX", obj_mio_icons, {effect: true, boss: boss, entry: entry});
 			clicked = true;
 		};

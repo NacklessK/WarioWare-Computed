@@ -18,6 +18,13 @@ global.game_start = false;
 global.stage_room = undefined;
 global.c_stage = "";
 global.presentation = "";
+global.fullscreen = false;
+global.vsync = false;
+
+// Unlcokables (µGames in Microgames.gml)
+
+global.unlocked_extras = [false, false, false]; // 1 - Missions; 2 - Cheats; 3 - DIY
+
 
 // Audio
 global.bgm = [snd_next, snd_win, snd_loss, snd_wario_whirled, snd_speed_up, snd_pop_ups, snd_wlsi_sweet_stuff, snd_land_sand, snd_spaceship_music, snd_floats_island, snd_wobble_box, snd_crazy_cars, snd_anyone_home, snd_balance];
