@@ -4,7 +4,7 @@ if (is_opening){
 	image_yscale += ((768 / 160) - image_yscale) * 0.2;
 
 	if (abs(1366 / 260 - image_xscale) < 0.05){
-		is_opening = global.presentation == "main";
+		is_opening = global.presentation == "game";
 		if (is_opening) room_goto(rm_index_menu)
 	};
 }

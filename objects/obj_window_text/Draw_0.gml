@@ -15,7 +15,7 @@ if (global.presentation == "extras") && (array_sum(global.unlocked_extras) == 0)
 }
 
 else if (global.presentation == "data"){
-	txt = "Factory reset WariOS ?"
+	txt = "Factory reset WariOS?";
 	txt_y = -200;
 };
 

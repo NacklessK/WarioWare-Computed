@@ -1,6 +1,9 @@
 var pressed = (keyboard_check_pressed(vk_space)) || ((position_meeting(mouse_x, mouse_y, self)) &&  (mouse_check_button_pressed(mb_left)));
 
-if pressed && (image_alpha == d_alpha) start = true;
+if pressed && (image_alpha == d_alpha){
+	start = true;
+	load_game();
+};
 
 if !(bg){
 	if (instance_number(obj_computed) == 1) && ((abs(obj_computed.x - obj_computed.target_x) < 3)){

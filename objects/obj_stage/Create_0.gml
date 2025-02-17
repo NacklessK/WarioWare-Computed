@@ -1,7 +1,7 @@
 switch purpose{
 	
 	case "demo":
-		boss_interval = 2;
+		boss_interval = 10;
 		speed_up_interval = 3;
 		base_spd = 0;
 		is_silent = false;

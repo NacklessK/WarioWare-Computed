@@ -40,6 +40,24 @@ function load_game(){
 	
 };
 
+function reset_data(){
+	global.highscores = [0, 0, 0];
+	global.unlocked_extras = [false, false, false];
+	
+	global.unlocked_mio = []
+	global.index_highscores = []
+	
+	repeat (array_length(global.microgames) + array_length(global.bosses)){
+		array_push(global.index_highscores, [0, 0, 0]);
+		array_push(global.unlocked_mio, false);
+	};
+	
+	save_game();
+
+	global.game_start = false;
+	fade_out(rm_title_screen, 0.5);
+};
+
 // Microgame fucntions
 
 function mio(_in, _name, _command, _controls, _time_limit, _lvl1, _lvl2=_lvl1, _lvl3=_lvl1){
