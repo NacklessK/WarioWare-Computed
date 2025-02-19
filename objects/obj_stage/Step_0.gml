@@ -1,4 +1,6 @@
-if !(has_reset) reset();
+if !(has_reset) {
+	reset();
+};
 
 if (global.score == next_boss) global.boss = true;
 
@@ -12,7 +14,7 @@ if (global.stage_state == "result") {
 	  if !(global.winning) lose_life();
 	  else if (global.one_up) && (global.life < 4) global.life++;
 	  if (purpose == "index") level_up(is_silent); 
-	  global.one_up = false; 
+	  global.one_up = false;
   }
   
 	if !(audio_is_playing(jingle)){
@@ -44,6 +46,7 @@ if (global.stage_state == "result") {
 	
 	else if !(boss_procedure){
 		if (global.life > 0) {
+			show_debug_message(global.stage_state)
 		    global.stage_state = "next";
 		}
 		else {

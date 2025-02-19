@@ -24,8 +24,8 @@ else if !(one_up){
 				else image_index = global.c_bos.controls;
 			}
 			else {
-			    sprite_index = spr_display_lives
-				image_index = abs(4 - global.life);
+			    sprite_index = spr_display_levels
+				image_index = global.level - 1;
 			}
 		};
 	}

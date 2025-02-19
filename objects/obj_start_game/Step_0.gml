@@ -2,7 +2,6 @@ var pressed = (keyboard_check_pressed(vk_space)) || ((position_meeting(mouse_x, 
 
 if pressed && (image_alpha == d_alpha){
 	start = true;
-	load_game();
 };
 
 if !(bg){
@@ -47,6 +46,9 @@ if (start){
 	else {
 		image_alpha = button_id.image_alpha * d_alpha;
 		y = button_id.y
-		if (y < -sprite_height) instance_destroy();
+		if (y < -sprite_height){
+			load_game();
+			instance_destroy();
+		};
 	};
 };

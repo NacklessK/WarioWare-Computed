@@ -11,6 +11,7 @@ mio_pin = mio(8, "PIN'd", "Code?", 5, 4.5, rm_pin);
 mio_sk = mio(9, "Sonic & Knuckles", "Beam!", 0, 4, rm_sk);
 mio_word_up = mio(10, "Word Up", "Complete!", 4, 5, rm_word_up);
 mio_weak_link = mio(11, "The Weakest Link", "Answer!", 5, 6, rm_weakest_link);
+mio_pen = mio(12, "The Pen-nacle", "Make it write!", 3, 4, rm_pen);
 
 // Bosses
 
@@ -19,7 +20,8 @@ bos_launch_break = bos(0x0, "Launch Break", "Launch!", 3, rm_launch_break1);
 // All microgames in one array 
 global.microgames = [mio_wario_whirled, mio_pop_up, mio_wlsi, mio_figures, 
 					mio_straight_aim, mio_kssu, mio_mashed_karate, mio_trippin, 
-					mio_pin, mio_sk, mio_word_up, mio_weak_link];
+					mio_pin, mio_sk, mio_word_up, mio_weak_link,
+					mio_pen];
 					
 
 // All bosses in one array					

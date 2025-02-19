@@ -23,6 +23,7 @@
     {"name":"inst_51CC0034","path":"rooms/rm_index_menu/rm_index_menu.yy",},
     {"name":"inst_CD78A29","path":"rooms/rm_index_menu/rm_index_menu.yy",},
     {"name":"inst_6B649748","path":"rooms/rm_index_menu/rm_index_menu.yy",},
+    {"name":"inst_4358483B","path":"rooms/rm_index_menu/rm_index_menu.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -65,8 +66,11 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_mio_icons","path":"objects/obj_mio_icons/obj_mio_icons.yy",},"propertyId":{"name":"entry","path":"objects/obj_mio_icons/obj_mio_icons.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"11",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":2.0,"x":480.0,"y":224.0,},
         {"$GMRInstance":"v1","%Name":"inst_78D83BB4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_78D83BB4","objectId":{"name":"obj_mio_icons","path":"objects/obj_mio_icons/obj_mio_icons.yy",},"properties":[
-            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_mio_icons","path":"objects/obj_mio_icons/obj_mio_icons.yy",},"propertyId":{"name":"boss","path":"objects/obj_mio_icons/obj_mio_icons.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_mio_icons","path":"objects/obj_mio_icons/obj_mio_icons.yy",},"propertyId":{"name":"entry","path":"objects/obj_mio_icons/obj_mio_icons.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"12",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":2.0,"x":576.0,"y":224.0,},
+        {"$GMRInstance":"v1","%Name":"inst_4358483B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4358483B","objectId":{"name":"obj_mio_icons","path":"objects/obj_mio_icons/obj_mio_icons.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_mio_icons","path":"objects/obj_mio_icons/obj_mio_icons.yy",},"propertyId":{"name":"boss","path":"objects/obj_mio_icons/obj_mio_icons.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":2.0,"x":672.0,"y":224.0,},
       ],"layers":[],"name":"Icons","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Select","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_444EF2B9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_444EF2B9","objectId":{"name":"obj_index_select_box","path":"objects/obj_index_select_box/obj_index_select_box.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.5,"scaleY":2.5,"x":1499.0,"y":678.0,},

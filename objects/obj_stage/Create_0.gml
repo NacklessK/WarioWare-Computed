@@ -34,7 +34,6 @@ leveled = false;
 
 last = array_length(global.microgames) - 1;
 dark_timer = 0;
-load_game();
 
 
 global.index = 0;
@@ -45,6 +44,7 @@ randomize();
 global.sh_microgames = array_shuffle(global.microgames);
 global.sh_bosses = array_shuffle(global.bosses);
 global.c_bos = global.bosses[global.b_index];
+global.mio_end = false;
 
 function reset()
 {
@@ -55,6 +55,7 @@ function reset()
 	}
 	if (is_random) pick_mio();
 	else pick_mio(global.s_mio);
+	global.mio_end = false;
 	game_room = global.c_mio.lvl1;
 	next_played = false;
 	go_played = false;
@@ -64,6 +65,9 @@ function reset()
 	sped_up = false;
 	leveled = false;
 	has_reset = true;
+	
+	cursor_sprite = spr_mouse;
+	window_set_cursor(cr_none);
 	
 	if (global.winning) jingle = snd_win;
 	else jingle = snd_loss;
