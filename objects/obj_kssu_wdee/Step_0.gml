@@ -1,4 +1,5 @@
-if (alive) && (place_meeting(x, y, obj_kssu_hammer)){
+if (obj_kssu_kirby.die_timer == 0){
+	if (alive) && (place_meeting(x, y, obj_kssu_hammer)){
 	alive = false;
 	global.winning = true;
 	sprite_index = spr_kssu_wdee_hurt;
@@ -18,4 +19,10 @@ else if (x_step >= 15){
 	}
 }
 
-if !(alive) x_step++;;
+if !(alive) x_step++;
+}
+
+else{
+	image_speed = 0;
+	speed = 0;
+};

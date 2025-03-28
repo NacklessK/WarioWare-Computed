@@ -36,6 +36,10 @@ switch global.presentation{
 	case "data":
 		txt = "Wait ! What are you doing ? You're going to delete all your data ! Don't do that !"
 		break;
+	
+	case "shutdown":
+		txt = "You don't wanna play my games ?! Whatever ! I didn't need you anyways! Go away!";
+		break;
 
 };
 

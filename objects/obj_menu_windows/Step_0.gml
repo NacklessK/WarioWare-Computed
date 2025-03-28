@@ -9,6 +9,7 @@ if (abs(scale - 4) < 0.5) opened = true;
 
 if (position_meeting(mouse_x, mouse_y, self)) && (mouse_check_button_pressed(mb_left)){
 	open = false;
+	if (global.presentation != "data") save_game();
 };
 
 if (scale < 0.25){
@@ -29,6 +30,10 @@ if (scale > 2) && (scale < 3){
 	
 		case 2:
 			global.presentation = "extras";
+			break;
+		
+		case 3:
+			global.presentation = "shutdown";
 			break;
 	};
 };

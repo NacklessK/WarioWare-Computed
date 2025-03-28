@@ -56,7 +56,6 @@ function reset()
 	if (is_random) pick_mio();
 	else pick_mio(global.s_mio);
 	global.mio_end = false;
-	game_room = global.c_mio.lvl1;
 	next_played = false;
 	go_played = false;
 	result_played = false;

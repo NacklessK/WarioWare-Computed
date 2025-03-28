@@ -2,7 +2,6 @@ if !(effect) {
     if (instance_number(obj_menu_windows) > 0) {
 	if (obj_menu_windows.closed){
 		y = -1000;
-		save_game();
 		image_xscale = og_scale;
 		image_yscale = image_xscale;
 		sprite_index = default_sprite;

@@ -47,7 +47,6 @@ if (start){
 		image_alpha = button_id.image_alpha * d_alpha;
 		y = button_id.y
 		if (y < -sprite_height){
-			load_game();
 			instance_destroy();
 		};
 	};

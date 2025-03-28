@@ -13,5 +13,11 @@ switch entry{
 		break;
 };
 
-if (rightside) image_angle = 0;
-else image_angle = 180;
+if (rightside){
+	image_angle = 0;
+	image_blend = c_purple;
+}
+else{
+	image_angle = 180;
+	image_blend = c_red;
+};

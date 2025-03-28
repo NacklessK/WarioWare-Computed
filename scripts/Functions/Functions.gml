@@ -58,6 +58,15 @@ function reset_data(){
 	fade_out(rm_title_screen, 0.5);
 };
 
+function unlock_all(){
+	global.unlocked_extras = [true, true, true];
+	global.unlocked_mio = []
+	
+	repeat (array_length(global.microgames) + array_length(global.bosses)){
+		array_push(global.unlocked_mio, true);
+	};
+};
+
 // Microgame fucntions
 
 function mio(_in, _name, _command, _controls, _time_limit, _lvl1, _lvl2=_lvl1, _lvl3=_lvl1){
@@ -96,7 +105,7 @@ function pick_mio(_index=undefined){
 	}
 	
 	else {
-		if (purpose == "demo") || (global.s_type == "mio"){
+		if (global.s_type == "mio"){
 			global.c_mio = global.microgames[_index];
 		}
 		else {
@@ -336,9 +345,26 @@ function fade_out(_room, _sec=1){
 	instance_create_depth(0, 0, 0, obj_fade_out, {sec: _sec, _room: _room});
 };
 
+function flash(_times, _spd){
+	instance_create_depth(0, 0, 0, obj_flash, {times: _times, spd: _spd});
+};
+
 function rand_sign(){
 	if round(random_range(0, 1)){
 		return 1;
 	}
 	else return -1;
+};
+
+function multi_place_meeting(x_coor, y_coor, obj_list)
+{
+	var result = false;
+	for (var i = 0; i < array_length(obj_list); i++)
+	{
+		if place_meeting(x_coor, y_coor, obj_list[i])
+		{
+			result = true
+		}	
+	}
+	return result;
 };

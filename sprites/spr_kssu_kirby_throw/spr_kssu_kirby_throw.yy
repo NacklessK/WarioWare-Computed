@@ -14,8 +14,6 @@
   "frames":[
     {"$GMSpriteFrame":"","%Name":"397ea499-464f-4f5f-b28c-a5d72a6ab723","name":"397ea499-464f-4f5f-b28c-a5d72a6ab723","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"d20cf618-236f-42ed-82d1-77ee7178d1c2","name":"d20cf618-236f-42ed-82d1-77ee7178d1c2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"34724264-b26d-4731-879e-577d7b7a9005","name":"34724264-b26d-4731-879e-577d7b7a9005","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"fa727226-b305-4e86-80e1-2e044d0a8d6d","name":"fa727226-b305-4e86-80e1-2e044d0a8d6d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -52,7 +50,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":4.0,
+    "length":2.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -77,12 +75,6 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d20cf618-236f-42ed-82d1-77ee7178d1c2","path":"sprites/spr_kssu_kirby_throw/spr_kssu_kirby_throw.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"767fb06b-7dd3-4880-9345-7cacabaaa143","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"34724264-b26d-4731-879e-577d7b7a9005","path":"sprites/spr_kssu_kirby_throw/spr_kssu_kirby_throw.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"4d2537cc-4d66-4c38-b6f5-4e72234fcf56","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"fa727226-b305-4e86-80e1-2e044d0a8d6d","path":"sprites/spr_kssu_kirby_throw/spr_kssu_kirby_throw.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"9d4b385d-7a39-4669-a53c-7150078929b3","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
