@@ -76,9 +76,17 @@ else if (global.stage_state == "next") && !(audio_is_playing(snd_speed_up)){
 
 	if !(audio_is_playing(snd_next))
 	{
-		if (global.level == 1) game_room = global.c_mio.lvl1;
-		else if (global.level == 2) game_room = global.c_mio.lvl2;
-		else game_room = global.c_mio.lvl3;
+		if !(global.is_boss) {
+			show_debug_message("Hii!")
+		    if (global.level == 1) game_room = global.c_mio.lvl1;
+			else if (global.level == 2) game_room = global.c_mio.lvl2;
+			else game_room = global.c_mio.lvl3;
+		}
+		else {
+		     if (global.level == 1) game_room = global.c_bos.lvl1;
+			else if (global.level == 2) game_room = global.c_bos.lvl2;
+			else game_room = global.c_bos.lvl3;
+		}
 		room_goto(game_room);
 		var in = global.c_mio.in;
 		if ((global.score + boss_interval == next_boss) && (global.score > 1)) in = global.c_bos.in + array_length(global.microgames);

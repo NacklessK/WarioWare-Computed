@@ -3,7 +3,7 @@ global.score = 0;
 global.winning = false;
 global.stage_state = "next";
 global.life = 4;
-global.level = 1;
+global.level = 2;
 global.index = 0;
 global.b_index = 0;
 global.s_mio = 0;
@@ -46,5 +46,5 @@ global.words = ["HAPPY", "WARIO", "GREAT", "SUPER", "COOL!"];
 global.missing_letters = [[1, 3, 4], [1, 3, 2], [3, 1, 0], [1, 0, 4]];
 
 // Empty file
-var f = file_text_open_read("empty");
-global.null_str = file_text_readln(f);
+//var f = file_text_open_read("empty");
+//global.null_str = file_text_readln(f);

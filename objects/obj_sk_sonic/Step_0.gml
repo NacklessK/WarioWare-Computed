@@ -18,8 +18,10 @@ if (global.losing){
 }
 
 if (global.level == 2){
-	sprite_index = spr_s3_sonic_run;
-	x += 10  * x_dir * global.game_spd;
+	if !(dead) && !(global.losing) {
+		sprite_index = spr_s3_sonic_run;
+		x += 10  * x_dir * global.game_spd;
+	};
 	image_xscale = x_dir * abs(image_xscale);
 	if (collide_cooldown >= 5){
 		if (place_meeting(x, y, obj_sk_barriere)){
