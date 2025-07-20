@@ -21,6 +21,9 @@ global.presentation = "";
 global.fullscreen = false;
 global.vsync = false;
 
+// Cutscenes
+global.intro_cutscene = [rm_intro_0, rm_intro_1, rm_intro_2];
+
 // Unlcokables (µGames in Microgames.gml)
 
 global.unlocked_extras = [false, false, false]; // 1 - Missions; 2 - Cheats; 3 - DIY

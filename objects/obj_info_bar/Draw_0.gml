@@ -26,19 +26,19 @@ switch global.presentation{
 		break;
 	
 	case "extras":
-		if (array_sum(global.unlocked_extras) == 0) txt = "You didn't unlock any extras ?! Bah ! What a loser you are, go play some games and come back when you'll stop being a disgrace!"
+		if (array_sum(global.unlocked_extras) == 0) txt = "You didn't unlock any extras?! Bah! What a loser you are, go play some games and come back when you'll stop being a disgrace!"
 		break;
 	
 	case "graphics":
-		txt = "What ?! You think my game looks ugly ! Well fix it yourself !"
+		txt = "What?! You think my game looks ugly ! Well fix it yourself !"
 		break;
 	
 	case "data":
-		txt = "Wait ! What are you doing ? You're going to delete all your data ! Don't do that !"
+		txt = "Wait! What are you doin? You're going to delete all your data! Don't do that!"
 		break;
 	
 	case "shutdown":
-		txt = "You don't wanna play my games ?! Whatever ! I didn't need you anyways! Go away!";
+		txt = "You don't wanna play my games?! Whatever! I didn't need you anyways! Go away!";
 		break;
 
 };
