@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Cutscenes",
-    "path":"folders/Sprites/Cutscenes.yy",
+    "name":"Wario",
+    "path":"folders/Sprites/Cutscenes/Wario.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

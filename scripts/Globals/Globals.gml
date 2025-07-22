@@ -22,7 +22,7 @@ global.fullscreen = false;
 global.vsync = false;
 
 // Cutscenes
-global.intro_cutscene = [rm_intro_0, rm_intro_1, rm_intro_2];
+global.intro_cutscene = [rm_intro_0, rm_intro_1, rm_intro_2, rm_intro_3, rm_intro_4, rm_intro_5];
 
 // Unlcokables (µGames in Microgames.gml)
 

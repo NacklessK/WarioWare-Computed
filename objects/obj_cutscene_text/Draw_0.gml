@@ -5,4 +5,4 @@ if (idx == idx_end or idx == -1){
 	show_debug_message(wait)
 };
 
-display_text(idx, c_white);
+display_text(idx);
