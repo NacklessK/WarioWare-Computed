@@ -77,7 +77,6 @@ else if (global.stage_state == "next") && !(audio_is_playing(snd_speed_up)){
 	if !(audio_is_playing(snd_next))
 	{
 		if !(global.is_boss) {
-			show_debug_message("Hii!")
 		    if (global.level == 1) game_room = global.c_mio.lvl1;
 			else if (global.level == 2) game_room = global.c_mio.lvl2;
 			else game_room = global.c_mio.lvl3;

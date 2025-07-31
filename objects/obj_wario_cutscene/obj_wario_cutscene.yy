@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_wario_type",
-    "path":"sprites/spr_wario_type/spr_wario_type.yy",
+    "name":"spr_wario_stand_side",
+    "path":"sprites/spr_wario_stand_side/spr_wario_stand_side.yy",
   },
   "spriteMaskId":null,
   "visible":true,

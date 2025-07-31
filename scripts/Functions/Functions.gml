@@ -114,6 +114,19 @@ function pick_mio(_index=undefined){
 	};
 };
 
+// Text Engine
+function add_txt(_str, _color=c_white, _duration=200, _scale=3, _font=global.command_font, _y_offset=40, _fade=20){
+	var line = {str: _str,
+		clr: _color,
+		duration: _duration,
+		scale: _scale,
+		font: _font,
+		y_offset: _y_offset,
+		fade: _fade,
+	};
+	array_push(global.txt, line);
+};
+
 function add_score(){
 	if !(self.score_added) {
 		global.score += 1;
