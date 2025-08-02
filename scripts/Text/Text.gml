@@ -11,7 +11,7 @@ c_cr = #5c8ce0
 // Text list
 
 global.txt = [];
-add_txt("Diamond City - 200X", c_white, 200, 2, fnt_info, 0); // 0
+add_txt("Diamond City - 200X", c_white, 60, 2, fnt_info, 0); // 0
 add_txt("After getting robbed of all the treasure\n he earned from saving a princess...");
 add_txt("Wario headed back to Diamond City\n without a single dime.");
 add_txt("On his way back, he was thinking\n of a way to get rich again.")
@@ -25,7 +25,7 @@ add_txt("Ouchie...", c_wa, 100);
 
 add_txt("Wait a second? A hundred gold coins?!", c_wa); // 10
 add_txt("");
-add_txt("Wahahaha!\nI have an idea!", c_wa, 200, 5);
+add_txt("Wahahaha!\nI have an idea!", c_wa, 200, 5, global.command_font, 40, 0);
 add_txt("Dr. Crygor's Lab");
 add_txt("I see! But making an operating system\n takes more than you think.", c_cr);
 
@@ -37,7 +37,7 @@ add_txt("Sound designers...", c_cr)
 
 add_txt("And not to forget that you'll have to be\n crative to make it stand out!", c_cr) //20
 add_txt("Alright! Amazing!", c_wa, 100);
-add_txt("Tell eveyone! Tommorow 6PM,\n right when I wake up!Don't be late!", c_wa, 100);
+add_txt("Tell eveyone! Tommorow 6PM,\n right when I wake up! Don't be late!", c_wa, 100);
 add_txt("");
 add_txt("... sigh...", c_cr, 150, 2);
 

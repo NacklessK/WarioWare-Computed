@@ -15,6 +15,7 @@ function display_text(index){
 		
 		if (time > line.duration - line.fade) draw_set_alpha(abs(time - line.duration) / line.fade);
 		if (time < line.fade) draw_set_alpha(time / line.fade);
+		if (line.fade == 0) draw_set_alpha(1);
 	
 		if (string_pos("\n", line.str) != 0) offset += 5;
 		draw_text_transformed(x, y + offset, line.str,  line.scale,  line.scale, 0);
@@ -35,7 +36,15 @@ function display_text(index){
 if (room == rm_intro_0){
 	cursor_sprite = spr_empty;
 	window_set_cursor(cr_none);
+	audio_stop_all();
+	if !(audio_is_playing(snd_mmx2_intro)) audio_play_sound(snd_mmx2_intro, 10, false);
 }
+
+else if (room == rm_intro_2){
+	audio_stop_all();
+	if !(audio_is_playing(snd_toy_block_tower)) audio_play_sound(snd_toy_block_tower, 10, false);
+}
+
 else if (room == rm_intro_4){
 	cursor_sprite = spr_mouse;
 }
@@ -44,4 +53,18 @@ else if (room == rm_intro_5){
 	cursor_sprite = spr_empty;
 }
 
+else if (room == rm_intro_6){
+	audio_stop_all();
+	if !(audio_is_playing(snd_sa1_intro)) audio_play_sound(snd_sa1_intro, 10, false);
+}
 
+else if (room == rm_intro_7){
+	audio_stop_all();
+	if !(audio_is_playing(snd_crygor_theme)) audio_play_sound(snd_crygor_theme, 10, false);
+}
+
+
+else if (room == rm_intro_9){
+	audio_stop_all();
+	if !(audio_is_playing(snd_warioware_intro)) audio_play_sound(snd_warioware_intro, 10, false);
+}

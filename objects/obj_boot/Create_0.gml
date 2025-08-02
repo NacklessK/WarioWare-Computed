@@ -1,1 +1,2 @@
-room_goto(rm_title_screen);
+timer = 300
+window_set_fullscreen(true)

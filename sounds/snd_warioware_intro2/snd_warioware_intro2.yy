@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_warioware_intro2",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":201.03943,
+  "name":"snd_warioware_intro2",
+  "parent":{
+    "name":"Cutscenes",
+    "path":"folders/Sounds/BGM/Cutscenes.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_warioware_intro2.mp3",
+  "type":0,
+  "volume":1.0,
+}

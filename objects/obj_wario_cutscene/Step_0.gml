@@ -5,8 +5,12 @@ case rm_intro_1:
 	if (timer < time){
 		timer++;
 	}
-
 	else{
+		if !(voice_played){
+			audio_play_sound(snd_speed, 10, false);
+			audio_play_sound(snd_wario_laugh1, 10, false);
+			voice_played = true;
+		};
 		x_vel += 1.5;
 		x -= x_vel;
 	}
@@ -19,23 +23,40 @@ case rm_intro_3:
 	}
 
 	else{
+		if !(voice_played){
+			audio_stop_all();
+			audio_play_sound(snd_wario_nono, 10, false);
+			voice_played = true;
+		};
 		sprite_index = spr_wario_pc_shocked;
 	};
 	break;
 	
 case rm_intro_5:
+
 	if (timer < time){
+		if !(voice_played){
+			audio_stop_all();
+			audio_play_sound(snd_wario_wah, 10, false);
+			voice_played = true;
+		};
 		sprite_index = spr_wario_pc_shocked;
 		timer++;
 	}
 	else{
 		if (timer < time + 60){
 			timer++;
+			voice_played = false;
+			if !(audio_is_playing(snd_angry_music)) audio_play_sound(snd_angry_music, 10, false);
 			sprite_index = spr_wario_sit_angry;
 		}
 		else if (y > -sprite_height * 2) && (x == og_x){
 			y  += y_vel;
 			y_vel -= 3;
+			if !(voice_played){
+				audio_play_sound(snd_wario_scream1, 10, false);
+				voice_played = true;
+			};
 		}
 		else if (y < 490){
 			if (x == og_x) y_vel = 0;
@@ -47,6 +68,7 @@ case rm_intro_5:
 		else if (old_y == y){
 			
 			if (timer < time + 120){
+				if (timer < time + 61) audio_play_sound(snd_wario_ah, 10, false);
 				timer++;
 				sprite_index = spr_wario_land;
 			}
@@ -56,7 +78,9 @@ case rm_intro_5:
 					if (sprite_index == spr_wario_whew) && (image_index > 1) image_speed = 0;
 					timer++;
 				}
+				
 				else{
+					audio_stop_all();
 					sprite_index = spr_wario_land_shocked;
 					
 				}
@@ -74,6 +98,11 @@ case rm_intro_5:
 			image_speed = 1;
 			if (timer < time + 50) timer++;
 			else{
+				if !(voice_played){
+					audio_stop_all();
+					audio_play_sound(snd_wario_laugh1, 10, false);
+					voice_played = true;
+				};
 				sprite_index = spr_wario_money_laugh;
 			};
 		};
@@ -122,6 +151,10 @@ case rm_intro_5:
 		break;
 		
 		case rm_intro_10:
+			if !(voice_played){
+				audio_play_sound(snd_wario_alright, 10, false);
+				voice_played = true;
+			};
 			if (timer < time) timer++;
 			else{
 				sprite_index = spr_wario_charge;

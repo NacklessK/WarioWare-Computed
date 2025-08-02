@@ -4,6 +4,7 @@ y_vel = 0;
 og_x = x;
 old_y = y;
 portraits = [false, false, false, false];
+voice_played = false;
 
 switch room{
 	case rm_intro_1:

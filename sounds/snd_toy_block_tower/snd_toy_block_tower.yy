@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_toy_block_tower",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":118.93658,
+  "name":"snd_toy_block_tower",
+  "parent":{
+    "name":"Cutscenes",
+    "path":"folders/Sounds/BGM/Cutscenes.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_toy_block_tower.mp3",
+  "type":0,
+  "volume":1.0,
+}
