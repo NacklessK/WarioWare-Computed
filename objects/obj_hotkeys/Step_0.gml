@@ -1,3 +1,3 @@
-if (keyboard_check(vk_f10)){
-	unlock_all();
+if (keyboard_check_pressed(vk_f10)){
+	window_set_fullscreen(!window_get_fullscreen())
 };

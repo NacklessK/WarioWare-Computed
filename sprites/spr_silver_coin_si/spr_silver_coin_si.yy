@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_silver_coin_si",
   "bboxMode":0,
   "bbox_bottom":28,
@@ -12,11 +12,11 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"e4c6fea5-47ba-4310-a498-b67d476422db","name":"e4c6fea5-47ba-4310-a498-b67d476422db","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"3e5b3f75-4f67-4a3b-9210-7e18b0dd23fc","name":"3e5b3f75-4f67-4a3b-9210-7e18b0dd23fc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"2e166522-48f3-47e6-8cf9-baf82f90d3bd","name":"2e166522-48f3-47e6-8cf9-baf82f90d3bd","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"efa21953-00c1-4b9b-8d4f-aa421a141e2b","name":"efa21953-00c1-4b9b-8d4f-aa421a141e2b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"5c663f80-8d26-41e9-8cb1-61c40fdfa3a1","name":"5c663f80-8d26-41e9-8cb1-61c40fdfa3a1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e4c6fea5-47ba-4310-a498-b67d476422db","name":"e4c6fea5-47ba-4310-a498-b67d476422db","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"3e5b3f75-4f67-4a3b-9210-7e18b0dd23fc","name":"3e5b3f75-4f67-4a3b-9210-7e18b0dd23fc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"2e166522-48f3-47e6-8cf9-baf82f90d3bd","name":"2e166522-48f3-47e6-8cf9-baf82f90d3bd","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"efa21953-00c1-4b9b-8d4f-aa421a141e2b","name":"efa21953-00c1-4b9b-8d4f-aa421a141e2b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"5c663f80-8d26-41e9-8cb1-61c40fdfa3a1","name":"5c663f80-8d26-41e9-8cb1-61c40fdfa3a1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -72,21 +72,11 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e4c6fea5-47ba-4310-a498-b67d476422db","path":"sprites/spr_silver_coin_si/spr_silver_coin_si.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"fb8990a4-d4b2-45e5-bda4-dde7d8c6e646","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3e5b3f75-4f67-4a3b-9210-7e18b0dd23fc","path":"sprites/spr_silver_coin_si/spr_silver_coin_si.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"ed43a439-32fa-4979-8323-e730ea02d086","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2e166522-48f3-47e6-8cf9-baf82f90d3bd","path":"sprites/spr_silver_coin_si/spr_silver_coin_si.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"bba77946-f595-461a-a251-537d085ab2ed","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"efa21953-00c1-4b9b-8d4f-aa421a141e2b","path":"sprites/spr_silver_coin_si/spr_silver_coin_si.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"7e38f9fc-0b35-46bd-98ca-fa315626fc8d","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5c663f80-8d26-41e9-8cb1-61c40fdfa3a1","path":"sprites/spr_silver_coin_si/spr_silver_coin_si.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"c4e06876-d898-4343-81eb-a1e178f69028","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"e4c6fea5-47ba-4310-a498-b67d476422db","path":"sprites/spr_silver_coin_si/spr_silver_coin_si.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"fb8990a4-d4b2-45e5-bda4-dde7d8c6e646","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"3e5b3f75-4f67-4a3b-9210-7e18b0dd23fc","path":"sprites/spr_silver_coin_si/spr_silver_coin_si.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"ed43a439-32fa-4979-8323-e730ea02d086","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"2e166522-48f3-47e6-8cf9-baf82f90d3bd","path":"sprites/spr_silver_coin_si/spr_silver_coin_si.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"bba77946-f595-461a-a251-537d085ab2ed","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"efa21953-00c1-4b9b-8d4f-aa421a141e2b","path":"sprites/spr_silver_coin_si/spr_silver_coin_si.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"7e38f9fc-0b35-46bd-98ca-fa315626fc8d","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"5c663f80-8d26-41e9-8cb1-61c40fdfa3a1","path":"sprites/spr_silver_coin_si/spr_silver_coin_si.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"c4e06876-d898-4343-81eb-a1e178f69028","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
